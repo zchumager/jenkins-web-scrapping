@@ -1,9 +1,9 @@
 pipeline {
     agent none
     stages {
-        stage("curl url") {
+        stage("Getting CLIMATE.md") {
             steps {
-                println("GETTING URL www.google.com")
+                webPage = sh(script: 'curl https://github.com/smartHomeHub/SmartIR/blob/master/docs/CLIMATE.md', returnStdout: true)
             }
         }
     }
