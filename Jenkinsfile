@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("curl url") {
             steps {
-                println("getting url")
+                println("GETTING URL www.google.com")
             }
         }
     }
