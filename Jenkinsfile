@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage("Getting CLIMATE.md") {
             steps {
-                gettingClimateMd()
+                script {
+                    gettingClimateMd()
+                }
             }
         }
     }
