@@ -4,6 +4,7 @@ pipeline {
         stage("Getting CLIMATE.md") {
             steps {
                 script {
+                    currentBuild.displayName = "Web scrapping Job #$BUILD_NUMBER"
                     gettingClimateMd()
                 }
             }

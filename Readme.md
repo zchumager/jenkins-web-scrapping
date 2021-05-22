@@ -1,3 +1,8 @@
+Prerequisites:
+Install Docker
+Pull Jenkins' Docker image
+Run Jenkins' Docker container
+
 1. Create a new folder to store the git project
 2. Create a new file without extension just called Jenkinsfile
 3. Initialize the repository with git init command
@@ -16,3 +21,7 @@ environment section: It creates ENVIROMENT VARIABLES to be used by the shell ope
 
 Notes:
 All new commit are being shown in the next job execution
+
+Jenkins DSL
+BUILD_NUMBER
+currentBuild.displayName
