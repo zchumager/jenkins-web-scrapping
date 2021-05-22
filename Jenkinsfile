@@ -13,4 +13,6 @@ pipeline {
 
 def gettingClimateMd() {
     def webPage = sh(script: 'curl https://github.com/smartHomeHub/SmartIR/blob/master/docs/CLIMATE.md', returnStdout: true)
+    println("**************Web Page**************")
+    println(webPage)
 }

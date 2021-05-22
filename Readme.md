@@ -8,7 +8,11 @@
 8. Put the http url from the repository created in step 4 in Repository URL textbox
 9. Use valid credentials then click Apply button and finally Save button
 
-Conceptos
+Concepts
 
 Agent: It is the machine where the terminal is open to execute the shell commands in the script section (inside steps section)
 environment section: It creates ENVIROMENT VARIABLES to be used by the shell opened by the agent
+
+
+Notes:
+All new commit are being shown in the next job execution
