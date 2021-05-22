@@ -17,15 +17,11 @@ def gettingClimateMd() {
 
     println("**************Web Page**************")
 
-    /*
-    
-    def startIndex = webPage.indexOf('href="#mirage"')
+    def startIndex = webPage.indexOf('</a>Mirage</h4>"')
     webPage = webPage[startIndex..-1]
 
     def endIndex = webPage.indexOf('<td>Broadlink</td>')
     webPage = webPage[0..endIndex]
-
-    */
     
     println(webPage)
 }
