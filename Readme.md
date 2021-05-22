@@ -1,7 +1,7 @@
 Prerequisites:
 Install Docker
 Pull Jenkins' Docker image
-Run Jenkins' Docker container
+Run Jenkins' Docker container following its official documentation
 
 1. Create a new folder to store the git project
 2. Create a new file without extension just called Jenkinsfile
