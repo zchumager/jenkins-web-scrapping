@@ -4,7 +4,7 @@ pipeline {
         stage("Getting CLIMATE.md") {
             steps {
                 script {
-                    currentBuild.displayName = "scrapping-Job#$BUILD_NUMBER"
+                    currentBuild.displayName = "scrap-#$BUILD_NUMBER"
                     gettingClimateMd()
                 }
             }
@@ -17,8 +17,11 @@ def gettingClimateMd() {
 
     println("**************Web Page**************")
 
-    def startIndex = webPage.indexOf("Mirage")
+    def startIndex = webPage.indexOf('href="#mirage"')
     webPage = webPage[startIndex..-1]
+
+    def endIndex = webPage.indexOf('<td>Broadlink</td>')
+    webPage = webPage[0..endIndex]
     
     println(webPage)
 }
