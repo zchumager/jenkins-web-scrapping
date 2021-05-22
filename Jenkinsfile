@@ -40,4 +40,7 @@ def gettingClimateMd(deviceCompany) {
 
     println("**************Information**************")
     println(info)
+
+    deviceCode = info.findAll("\\d+")[0]
+    println("DEVICE CODE: ${deviceCode} for $deviceCompany")
 }
