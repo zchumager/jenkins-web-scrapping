@@ -19,9 +19,6 @@ def gettingClimateMd() {
 
     def startIndex = webPage.indexOf("Mirage")
     webPage = webPage[startIndex..-1]
-
-    def endIndex = webPage.indexOf("<td>Broadlink</td>")
-    webPage = webPage[0..endIndex]
     
     println(webPage)
 }
