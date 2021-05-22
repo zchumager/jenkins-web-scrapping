@@ -1,3 +1,6 @@
+
+def deviceCompany = params.Device_Company
+
 pipeline {
     agent any
     stages {
@@ -5,6 +8,7 @@ pipeline {
             steps {
                 script {
                     currentBuild.displayName = "scrap_#$BUILD_NUMBER"
+                    println("Device Company: ${deviceCompany}")
                     gettingClimateMd()
                 }
             }
