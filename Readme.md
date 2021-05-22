@@ -13,15 +13,18 @@ Run Jenkins' Docker container following its official documentation
 8. Put the http url from the repository created in step 4 in Repository URL textbox
 9. Use valid credentials then click Apply button and finally Save button
 
-Concepts
+    Requirements after executing this code once
+Manage Jenkins -> In process Script Approval
+Approve the pending signature approval
 
+    Concepts
 Agent: It is the machine where the terminal is open to execute the shell commands in the script section (inside steps section)
 environment section: It creates ENVIROMENT VARIABLES to be used by the shell opened by the agent
 
 
-Notes:
+    Notes:
 All new commit are being shown in the next job execution
 
-Jenkins DSL
+    Jenkins Groovy DSL
 BUILD_NUMBER
 currentBuild.displayName
